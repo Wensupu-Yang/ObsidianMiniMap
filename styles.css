@@ -6,3 +6,20 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+.obsidian-minimap-container {
+    height: 100%; 
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    overflow-y: auto;
+    background-color: var(--background-primary); /* Use theme's primary background color */
+    color: var(--text-primary); /* Use theme's primary text color */
+}
+
+.minimap-line {
+    font-size: 5px; /* Small font size for minimap */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
